@@ -40,7 +40,6 @@ pip install ultralytics torch torchvision opencv-python
 Follow dataset conversion notebook
 jupyter notebook dataset_preparation.ipynb
 
-
 4. **Train model**
 
 yolo train model=yolov2n.pt data=arthropods.yaml epochs=50 imgsz=640
@@ -49,10 +48,15 @@ yolo train model=yolov2n.pt data=arthropods.yaml epochs=50 imgsz=640
 yolo predict model=best.pt source="path/to/images"
 
 ## 📁 Project Structure
+
 ├── dataset/ # Converted YOLO format dataset
+
 ├── runs/detect/ # Training results & visualizations
+
 ├── vertopal.com_yolo_v2.pdf # Complete project notebook
+
 ├── arthropods.yaml # Dataset config
+
 └── README.md
 
 
